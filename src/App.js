@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Segment from './component/Segment';
+import './App.css'
 
 function App() {
+  const [fileObj,setFileObj]=useState([
+    {
+      name:'Segment 1',
+      id: 1,
+      files:[
+       {
+         name: '1.1',
+         icon: '😀',
+         color: 'red'
+       },
+       {
+         name: '1.2',
+         icon: '😀😀',
+         color: 'green'
+       }
+      ]
+    }
+  ]);
+  const [id,setId]=useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      {fileObj.map((ele)=>{
+        return <Segment ele={ele}/>
+      })}
     </div>
   );
 }
