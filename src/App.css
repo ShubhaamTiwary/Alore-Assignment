@@ -1,8 +1,16 @@
+body{
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  height: auto;
+}
 #App{
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
   margin-top: 10px;
+  height: 100%;
 }
 
 #segHeader{
@@ -39,7 +47,7 @@
   font-size: 22px;
 }
 #outerCircle:hover{
-  box-shadow: 1px 1px 3px 2px #ccc;
+  box-shadow: 2px 2px 3px 3px #ccc;
 }
 #segment{
   margin-top: 20px;
@@ -75,15 +83,13 @@
 }
 
 .MainDiv{
-  position: fixed;
   display: flex;
-  left: 0;
-  top:0;
+  height: auto;
 }
 
 .sideBar{
-  width: 250px;
-  height: 1080px;
+  width: 230px;
+  height: 100vh;
   left: 70px;
   border: 1px solid #CCCCCC;
   background-color: #F1F1F1;
@@ -112,7 +118,7 @@
 }
 
 #segmentText{
-  margin-top: 9px;
+  margin-top: 10px;
   font-family: Inter;
   font-size: 14px;
   font-weight: 700;
@@ -120,4 +126,10 @@
   letter-spacing: 0.5px;
   text-align: left;
   margin-left: 5px;
+}
+
+#header{
+  width: 75vw;
+  height: 50px;
+  border-bottom: #CCCCCC 2px solid;
 }
