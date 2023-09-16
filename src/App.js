@@ -1,34 +1,68 @@
 import React, { useState } from 'react';
-import Segment from './component/Segment';
+import Segment from './component/Segment'
 import './App.css'
 
 function App() {
   const [fileObj,setFileObj]=useState([
     {
       name:'Segment 1',
+      icon:'🐔',
       id: 1,
       files:[
        {
-         name: '1.1',
+         name: 'Newyork-ITeS-11-50',
          icon: '😀',
          color: 'red'
        },
        {
-         name: '1.2',
-         icon: '😀😀',
+         name: 'Newyork-ITeS-11-50',
+         icon: '🤩',
          color: 'green'
        }
+      ]
+    } ,
+    {
+      name:'Segment 2',
+      icon:'😎',
+      id: 1,
+      files:[
+       {
+         name: 'Newyork-ITeS-11-50',
+         icon: '😛',
+         color: 'purple'
+       },
+       {
+         name: 'Newyork-ITeS-11-50',
+         icon: '😇',
+         color: 'blue'
+       },
+       {
+        name: 'Newyork-ITeS-11-50',
+        icon: '😬',
+        color: 'orange'
+      }
       ]
     }
   ]);
   const [id,setId]=useState(0);
 
   return (
+    <div className='MainDiv'>
+      <div className='sideBar'>
+        <span>Prospector</span>
+        <span id='SegmentsHeader'>Segments</span>
+        {fileObj.map((ele)=>{
+          return< span id='segmentText'>{ele.icon} {ele.name}</span>
+        })}
+      </div>
+
     <div id="App">
       {fileObj.map((ele)=>{
         return <Segment ele={ele}/>
       })}
     </div>
+    </div>
+    
   );
 }
 

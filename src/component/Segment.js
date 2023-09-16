@@ -6,8 +6,8 @@ import Blue from '../utils/blue-dropdown.svg';
 const Segment = ({ele}) => {
   const [show,setShow]=useState(false);
   return (
-    <div>
-      <span id='segHeader' >🐔 {ele.name}</span>
+    <div id='segment'>
+      <span id='segHeader' >{ele.icon} {ele.name}</span>
       <span><img src={show ? Blue:Black} id='icon' onClick={()=>{setShow(!show)}} /></span>
       {show &&
       <div id='TableIterator'>
@@ -16,7 +16,6 @@ const Segment = ({ele}) => {
         })}
       </div>}
     </div>
-    
   )
 }
 
