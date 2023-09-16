@@ -49,6 +49,23 @@ body{
 #outerCircle:hover{
   box-shadow: 2px 2px 3px 3px #ccc;
 }
+#label{
+  display: none;
+}
+#outerCircle2{
+  height: 80px;
+  width: 100%;
+  border: #1e10e1 2px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+#outerCircle2:hover{
+  box-shadow: 2px 2px 3px 3px #ccc;
+}
+
 #segment{
   margin-top: 20px;
 }

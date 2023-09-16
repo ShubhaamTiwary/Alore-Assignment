@@ -42,51 +42,6 @@ function App() {
           color: 'orange'
         }
       ]
-    },
-    {
-      name: 'Segment 2',
-      icon: '😎',
-      id: 1,
-      files: [
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😛',
-          color: 'purple'
-        },
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😇',
-          color: 'blue'
-        },
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😬',
-          color: 'orange'
-        }
-      ]
-    }
-    ,
-    {
-      name: 'Segment 2',
-      icon: '😎',
-      id: 1,
-      files: [
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😛',
-          color: 'purple'
-        },
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😇',
-          color: 'blue'
-        },
-        {
-          name: 'Newyork-ITeS-11-50',
-          icon: '😬',
-          color: 'orange'
-        }
-      ]
     }
   ]);
   const [id, setId] = useState(0);
@@ -108,6 +63,7 @@ function App() {
           return <Segment ele={ele} />
         })}
       </div>
+
     </div>
 
   );
